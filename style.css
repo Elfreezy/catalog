@@ -1,0 +1,543 @@
+/* 
+color 	#20c699
+		#21455d
+
+
+*/
+
+body {
+	margin: 0;
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 25px;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	text-transform: uppercase;
+}
+p {
+	margin: 0;
+}
+
+/* STARS */
+.star {
+	width: 250px;
+	height: 5px;
+	margin:0 auto;
+	position: relative;
+}
+.star:after {
+	display: block;
+	font-family: FontAwesome;
+	font-size: 1.5em;
+	padding: 5px;
+	position: absolute;
+	top: -20px;
+	left: 100px;
+}
+
+
+
+.container {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+
+/* Header */
+.header {
+	width: 100%;
+	height: 120px;
+	background-color: #21455d;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+}
+
+.header_inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	color: #fff;
+	font-weight:800;
+	font-size: 40px;
+}
+
+/* Nav */
+.nav__link {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-weight:700;
+	margin-left: 30px;
+	position: relative;
+	transition: color .15s ease-out;
+}
+.nav__link:hover {
+	color: #20c699;
+}
+
+.nav__link:after {
+	content: "";
+	display: block;
+	width: 0%;
+	height: 2px;
+	top:100%;
+	left: 0;
+	background-color: #20c699;
+	position: absolute;
+	opacity: 0;
+	transition: all .2s ease-out;
+}
+.nav__link:hover:after {
+	opacity: 1;
+	width: 100%;
+}
+
+/* Intro */
+.intro {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 680px;
+	background-color: #20c699;
+	color: #fff;
+}
+.intro_image{
+	background: url("static/shkolnitsa-katana-krov-piatna-rvanaia-odezhda-noch-ulitsa-ki.jpg") center no-repeat;
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	margin: 0 auto;
+}
+.intro_image:after {
+	content:"";
+	display: block;
+	width: 300px;
+	height: 300px;
+	margin-top: 100px;
+	border-radius: 100%;
+	background-color: #000;
+	opacity: .3;
+	transition: opacity .2s ease-out;
+}
+.intro_image:hover:after{
+	opacity: 0;
+}
+.intro_inner {
+	text-align: center;
+}
+
+.intro_title {
+	text-transform: uppercase;
+	font-weight: 1000;
+	font-size: 80px;
+	margin: 20px 0;
+}
+.intro_title:after {
+	content: "";
+	display: block;
+	width: 0%;
+	height: 2px;
+	top:100%;
+	left: 0;
+	background-color: #fff;
+	position: absolute;
+}
+
+/* STAR intro */
+.light_st {
+	background-color: #fff;
+}
+.light_st:after {
+	content:"\f005";
+	color:#fff;
+	background-color: #20c699;
+}
+
+.intro_content {
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+
+/* Portfolio */
+.portfolio {
+	width: 100%;
+	height: 1000px;
+	background-color: #fff;
+}
+.portfolio_inner {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.portfolio_title {
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 1000;
+	color:#21455d;
+	margin: 100px 0 20px 0;
+}
+
+
+/* STAR portfolio */
+.folder_st {
+	background-color: #21455d;
+}
+.folder_st:after {
+	content:"\f02d";
+	color: #21455d;
+	background-color: #fff;
+}
+
+
+/* Portfolio items */
+.row_items {
+	display: flex;
+	margin-top: 20px;
+}
+.folder_item {
+	margin: 10px;
+}
+.folder_item img {
+	width: 350px;
+	height: 250px;
+	padding: 0;
+}
+.wrapper_image {
+	width: 350px;
+	height: 250px;
+	position: relative;
+}
+
+.like_img {
+	position: absolute;
+}
+.like_img:after {
+	content:"\f04b";
+	font-family: FontAwesome;
+	font-size: 2em;
+	color: #fff;
+	width: 350px;
+	height: 150px;
+	top:40%;
+	left: 43%;
+	position: absolute;
+	padding-top: 100px;
+	opacity: 0;
+	z-index: 1;
+	transition: all .4s ease-out;
+}
+.like_img:hover:after {
+	opacity: 1;
+	font-size: 2.2em;
+}
+.wrapper_image:after {
+	content:"";
+	display: block;
+	position: absolute;
+	width: 350px;
+	height: 250px;
+	top: 0;
+	left: 0;
+	transition: all .4s ease-out;
+}
+.wrapper_image:hover:after {
+	background-color: #20c699;
+	opacity: 0.8;
+}
+.pubtitle_folder {
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#20c699;
+	margin-top: 5px;
+	font-weight: 900;
+	font-size: 1.5em;
+}
+
+
+
+/* Blog content */
+.blog_content {
+	width: 100%;
+	height: 1250px;
+	background-color: #20c699;
+}
+.blog_inner {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+
+/* Blog title */
+.blog_title {
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 1000;
+	color:#fff;
+	margin: 100px 0 20px 0;
+}
+
+
+
+/* STAR blog */
+.blog_st {
+	width: 250px;
+	height: 5px;
+	background-color: #fff;
+	margin: 0 auto;
+	position: relative;
+}
+
+.blog_st:after {
+	content:"\f073";
+	color: #fff;
+	background-color: #20c699;
+}
+
+/* Column Items */
+.image {
+	position: relative;
+	margin:50px 0 60px 0;
+}
+
+
+.column_items {
+	margin-top: 40px;
+	width: 400px;
+}
+.image img {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	position: relative;
+	border: 5px solid #fff;
+}
+.image:not(:nth-child(1)):before {
+	content: "";
+	width: 3px;
+	height: 65px;
+	background-color: #fff;
+	bottom: 100%;
+	left: 50%;
+	position: absolute;
+}
+
+
+/* Context Image */
+.context {
+	width: 400px;
+	height: 200px;
+	color: #fff;
+	position: absolute;
+	top:0;
+}
+.context h3 {
+	margin-bottom: 5px;
+}
+.num_1 {
+	float: left;
+	left: -300px;
+	text-align: right;
+}
+.num_2 {
+	float: right;
+	right: -300px;
+	text-align: left;
+}
+
+
+
+/* Button info */
+.button_context button {
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+	border: 2px solid #fff;
+	background-color: #20c699;
+	font-size: 20px;
+	color: #fff;
+	transition: all .2s ease-out;
+}
+.button_context button:hover {
+	color: #20c699;
+	background-color: #fff;
+}
+
+
+
+/* Contact */
+.contact_wrapper {
+	width: 100%;
+	height: 850px;
+	background-color: #fff;
+}
+
+.contact_inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+
+/* Title */
+.contact_title {
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 1000;
+	color:#21455d;
+	margin: 100px 0 20px 0;
+}
+
+/* STAR contact*/
+.contact_st {
+	background-color: #21455d;
+}
+
+.contact_st:after {
+	content:"\f003";
+	color: #21455d;
+	background-color: #fff;
+}
+
+
+/* Contact Form */
+.contact_form {
+	width: 60%;
+	margin: 50px auto;
+	margin-top: 100px;
+}
+.feedback_input {
+	width: 100%;
+	padding: 13px;
+	background-color: #fff;
+	color: #21455d;
+	font-weight: 300;
+	font-size: 20px;
+	margin-bottom: 5px;
+	border: 0;
+	border-top:1px solid #20c699;
+}
+.form textarea {
+	border-bottom:1px solid #20c699;
+	height: 200px;
+	padding: 13px;
+	resize: none;
+	margin-bottom: 50px;
+}
+
+/* Contact button */
+.button_sub{
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+	border: 2px solid #fff;
+	background-color: #20c699;
+	font-size: 20px;
+	color: #fff;
+	transition: all .2s ease-out;
+	float: left
+}
+.button_sub:hover {
+	background-color: #21455d;
+}
+
+
+	
+
+/* Footer */
+.footer {
+	width: 100%;
+	height: 300px;
+	background-color: #21455d;
+}
+.footer_inner {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+/* Footer items */
+.footer_item {
+	margin-top: 50px;
+	width: 400px;
+	height: 200px;
+	color: #fff;
+}
+
+
+/* Table Items */
+.table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.table a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #21455d;
+	border:2px solid #fff;
+	border-radius: 100%;
+	margin: 10px;
+	position: relative;
+	transition: color .2s ease-out;
+}
+.table a:hover {
+	background-color: #fff;
+}
+
+/* STAR table */
+.tb_item_1:after{
+	content: "\f099";
+	top: 10px;
+	left: 10px;
+}
+.tb_item_2:after{
+	content: "\f173";
+	top: 10px;
+	left: 15px;
+}
+.tb_item_3:after{
+	content: "\f17e";
+	top: 10px;
+	left: 12px;
+}
+.table a:after {
+	display: block;
+	font-family: FontAwesome;
+	font-size: 1.2em;
+	position: absolute;
+	color: #fff;
+	transition: color .1s ease-out;
+}
+
+.table a:hover:after {
+	color: #20c699;
+}
+
+
+
+/* Copyright */
+
+.copyright {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 60px;
+	background-color: #2b2b2b;
+	color: #fff;
+	font-size: 20px;
+}
